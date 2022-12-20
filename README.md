@@ -11,8 +11,8 @@ This project showcases my technical skills and provides a place where anyone can
 ## General
 ### Links
 **[LIVE SITE]()** <br>
-_[FRONT END REPOSITORY]()_
-_[BACK END REPOSITORY]()_
+_[FRONT END REPOSITORY](https://github.com/SunghunP/front-sung-portfolio)_ <br>
+_[BACK END REPOSITORY](https://github.com/SunghunP/backend-sung-portfolio)_ 
 
 ### Website Preview
 WIP
@@ -44,13 +44,12 @@ $ npm i
 
 ### Contributing
 If you have any contributions you would like to share:
-```
+
 Fork it!
 - Create your own branch: `git checkout -b name-of-branch`
 - commit your changes: `git commit -m 'Add some feature'`
 - Push the branch: `Git push origin name-of-branch`
 - Submit a pull request!
-```
 
 ### Available Scripts
 In the project directory, you can run:
