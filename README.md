@@ -23,6 +23,9 @@ This project showcases my technical skills and provides a place where anyone can
 _[FRONT END REPOSITORY](https://github.com/SunghunP/front-sung-portfolio)_ <br>
 _[BACK END REPOSITORY](https://github.com/SunghunP/backend-sung-portfolio)_ 
 
+### Wire Frame
+[WireFrame Can be Found here](https://www.figma.com/file/MmMHD0vVV1Y4I4tCBL95uc/Untitled?node-id=0%3A1&t=as9BsFVniq1BSbyu-1)
+
 ### Website Preview
 WIP
 
