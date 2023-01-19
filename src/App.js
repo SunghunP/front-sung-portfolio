@@ -8,15 +8,22 @@ import Projects from './pages/Projects';
 import Header from "./components/Header";
 import Footer from './components/Footer';
 
+const themes = {
+  mainText: '#ffffff',
+  mainBackground: '#1949c5',
+  reverseText: '#000000',
+  reverseBackground: '#ffffff'
+}
+
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header themes={themes}/>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home themes={themes}/>} />
         <Route path='/projects' element={<Projects/>}/>
       </Routes>
-      <Footer/>
+      <Footer themes={themes}/>
     </div>
   );
 }
