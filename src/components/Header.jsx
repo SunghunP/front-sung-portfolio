@@ -29,6 +29,7 @@ const StyledHeader = styled.header`
 			height: 3px;
 			bottom: 0;
 			left: 0;
+			border-radius: 20px;
 			background-color: #11ACD1;
 			transform-origin: bottom right;
 			transition: transform 0.25s ease-out;
