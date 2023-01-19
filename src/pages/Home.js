@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const StyledBody = styled.body`
-
+const StyledContentBody = styled.div`
+	height: 3000px;
 `;
 
 export default function Home () {
-	return <h1>Home</h1>
+	return <StyledContentBody>Home</StyledContentBody>
 };
