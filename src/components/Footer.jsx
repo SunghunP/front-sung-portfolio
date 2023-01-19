@@ -1,5 +1,10 @@
-export default function Footer () {
-	return <div>
+import styled from 'styled-components';
+const StyledFooter = styled.footer`
 
-	</div>
-}
+`;
+
+export default function Footer () {
+	return <StyledFooter>
+		footer
+	</StyledFooter>
+};
