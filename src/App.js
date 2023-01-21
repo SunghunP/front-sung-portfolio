@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 import Header from "./components/Header";
 import Footer from './components/Footer';
 
-const themes = {
+const theme = {
   mainText: '#ffffff',
   mainBackground: '#1949c5',
   reverseText: '#000000',
@@ -18,12 +18,12 @@ const themes = {
 function App() {
   return (
     <div className="App">
-      <Header themes={themes}/>
+      <Header theme={theme}/>
       <Routes>
-        <Route path='/' element={<Home themes={themes}/>} />
+        <Route path='/' element={<Home theme={theme}/>} />
         <Route path='/projects' element={<Projects/>}/>
       </Routes>
-      <Footer themes={themes}/>
+      <Footer theme={theme}/>
     </div>
   );
 }
