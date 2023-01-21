@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	background: ${props => props.themes.mainBackground};
-	height: 65px;
-	font-size: 30px;
+	background: ${props => props.theme.mainBackground};
+	height: 15%;
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
+	border-bottom: 1px solid #1c1c1c;
 
 	.links {
-		color: ${props => props.themes.mainText};
+		color: ${props => props.theme.mainText};
 		text-decoration: none;
-		margin: 0 30px;
+		margin: 0 3%;
 	}
 
 	a.hover-animation {
-		font-size: 20px;
-		margin: 0 15px;
+		font-size: 15px;
+		margin: 5% 10px;
 		display: inline-block;
 		position: relative;
 		padding: 5px 0;
@@ -46,8 +46,8 @@ const StyledHeader = styled.header`
 
 `;
 
-export default function Header ({themes}) {
-	return <StyledHeader themes={themes} className='flex'>
+export default function Header ({theme}) {
+	return <StyledHeader theme={theme} className='flex'>
 		<Link className='links' to='/'>Sung Hun Park</Link>
 		<nav className='flex'>
 			<Link className='links hover-animation' to='/about'>
