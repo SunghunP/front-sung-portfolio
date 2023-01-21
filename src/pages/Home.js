@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import AboutSection from '../sections/AboutSection';
-import ProjectSection from '../sections/ProjectSection';
-import SkillSection from '../sections/SkillSection';
+import AboutSection from '../components/sections/AboutSection';
+import ProjectSection from '../components/sections/ProjectSection';
+import SkillSection from '../components/sections/SkillSection';
 
 const StyledContentBody = styled.div`
 	width: 100%;
