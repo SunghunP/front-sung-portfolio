@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import AboutSection from '../components/mainPageSections/AboutSection';
 import ProjectSection from '../components/mainPageSections/ProjectSection';
 import SkillSection from '../components/mainPageSections/SkillSection';
-import Resume from '../components/Resume'
+import Resume from '../components/Resume';
+
 const StyledContentBody = styled.div`
 	width: 100%;
 	border-color: transparent;
@@ -11,9 +12,9 @@ const StyledContentBody = styled.div`
 
 export default function Home ({theme}) {
 	return <StyledContentBody theme={theme}>
-		<AboutSection></AboutSection>
-		<Resume></Resume>
-		<SkillSection></SkillSection>
-		<ProjectSection></ProjectSection>
+		<AboutSection theme={theme}></AboutSection>
+		<Resume theme={theme}></Resume>
+		<SkillSection theme={theme}></SkillSection>
+		<ProjectSection theme={theme}></ProjectSection>
 	</StyledContentBody>
 };
