@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 const theme = {
   mainText: '#ffffff',
   mainBackground: '#1949c5',
+  mainDarkMode: '#1c1c1c',
   reverseText: '#000000',
   reverseBackground: '#ffffff'
 }
