@@ -1,6 +1,5 @@
-export default function mapDataToComponents (data) {
-  return 'test'
-  // data.map(node => {
-  //   return 'test'
-  // });
+export default function mapDataToComponents (arr, Component) {
+  return arr.map((e, idx) => (
+    <Component  key={idx} e={e} />
+  ));
 };
