@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Skill from '../../components/Skill';
 
 const StyledDiv = styled.div`
   background: ${props => props.theme.reverseBackground};
@@ -7,6 +8,7 @@ const StyledDiv = styled.div`
 
 export default function SkillSection({theme}) {
   return <StyledDiv theme={theme}>
-    Skill section
+    <h1>Skills</h1>
+    <Skill></Skill>
   </StyledDiv>
-}
+};

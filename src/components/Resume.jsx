@@ -11,7 +11,7 @@ const ResumeDiv = styled.div`
     width: 70%;
     text-decoration: none;
     border-radius: 50px;
-  }
+  };
 
   button {
     margin: 10% auto;
@@ -27,15 +27,14 @@ const ResumeDiv = styled.div`
     color: ${props => props.theme.mainText};
     box-shadow: 0px 0px 20px #3F19C5;
     background-size: 200% auto;
-  }
+  };
 
   .wrapper{
     width: 100%;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-  }
-         
+  };
 `;
 
 export default function Resume({theme}) {
@@ -52,5 +51,5 @@ export default function Resume({theme}) {
         </a>
       </div>
     </ResumeDiv>
-  )
-}
+  );
+};
