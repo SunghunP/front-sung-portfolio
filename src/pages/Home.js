@@ -7,7 +7,7 @@ import Resume from '../components/Resume';
 const StyledContentBody = styled.div`
 	width: 100%;
 	border-color: transparent;
-	box-shadow: 0 0 10px 2px ${props => props.theme.mainBackground};
+	box-shadow: 0px 0px 10px 2px ${props => props.theme.mainBackground};
 `;
 
 export default function Home ({theme}) {

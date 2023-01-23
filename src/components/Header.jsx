@@ -7,20 +7,20 @@ const StyledHeader = styled.header`
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	border-bottom: 1px solid #1c1c1c;
+	box-shadow: 0px 0px 5px 5px rgba(28, 28, 28, 0.4);
 
 	.links {
 		color: ${props => props.theme.mainText};
 		text-decoration: none;
-		margin: 0 3%;
-	}
+		margin: 0px 3%;
+	};
 
 	a.hover-animation {
-		font-size: 15px;
+		font-size: 13px;
 		margin: 5% 10px;
 		display: inline-block;
 		position: relative;
-		padding: 5px 0;
+		padding: 5px 0px;
 
 		::after {
 			content:'';
@@ -34,16 +34,15 @@ const StyledHeader = styled.header`
 			transform-origin: bottom right;
 			transition: transform 0.25s ease-out;
 			transform: scaleX(0);
-			margin: -5px 0;
-		}
+			margin: -5px 0px;
+		};
 
 		:hover::after {
 			transform: scaleX(1);
 			transition: transform 0.23s ease-in;
 			transform-origin: bottom left;
-		}
-	}
-
+		};
+	};
 `;
 
 export default function Header ({theme}) {
