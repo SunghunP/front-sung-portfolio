@@ -3,7 +3,7 @@ import profile from '../../assets/images/profile.jpg';
 
 const StyledAboutSection = styled.div`
   width: 100%;
-  padding: 10px auto;
+  padding: 0px;
 
   .gradient > div.half-column.flex.col {
     background-color: #1c1c1c;
@@ -13,7 +13,7 @@ const StyledAboutSection = styled.div`
     min-width: 100%;
     min-height: 100%;
 		background-image: linear-gradient(
-    rgba(25,73,197,1) 0%, 
+    rgba(255,255,255,1) 0%, 
     rgba(28,28,28,0.1) 75%
 		);
     padding: 2%;
