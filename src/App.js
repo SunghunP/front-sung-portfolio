@@ -11,8 +11,8 @@ import Header from "./components/Header";
 import Footer from './components/Footer';
 
 // data
-import skills from './assets/data/skills';
-import projects from './assets/data/projects';
+import skillList from './assets/data/skills';
+import projectList from './assets/data/projects';
 
 const theme = {
   mainText: '#ffffff',
@@ -27,9 +27,9 @@ function App() {
     <div className="App">
       <Header theme={theme}/>
       <Routes>
-        <Route path='/' element={<Home theme={theme} skills={skills} projects={projects} />} />
-        <Route path='/projects' element={<Projects projects={projects} />}/>
-        <Route path='/skills' element={<Skills skills={skills} />}/>
+        <Route path='/' element={<Home theme={theme} skillList={skillList} projectList={projectList} />} />
+        <Route path='/projects' element={<Projects projectList={projectList} />}/>
+        <Route path='/skills' element={<Skills skillList={skillList} />}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer theme={theme}/>

@@ -10,11 +10,11 @@ const StyledContentBody = styled.div`
 	box-shadow: 0px 0px 10px 2px ${props => props.theme.mainBackground};
 `;
 
-export default function Home ({theme}) {
+export default function Home ({theme, skillList, projectList}) {
 	return <StyledContentBody theme={theme}>
 		<AboutSection theme={theme}></AboutSection>
 		<Resume theme={theme}></Resume>
-		<SkillSection theme={theme}></SkillSection>
-		<ProjectSection theme={theme}></ProjectSection>
+		<SkillSection theme={theme} skillList={skillList}></SkillSection>
+		<ProjectSection theme={theme} projectList={projectList}></ProjectSection>
 	</StyledContentBody>
 };
