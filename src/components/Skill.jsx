@@ -1,24 +1,22 @@
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
-  color: ${props => props.theme.mainBackground};
-  background: linear-gradient(to left, #12D8FA  75%, #199FC5  120%);
+  background: #1c1c1c;
+  border-top: 4px solid ${props => props.theme.mainBackground};
   padding: 1%;
   margin: 3% 2%;
   width: 40%;
   height: 150px;
-  border-radius: 20px;
-  border: 1px solid #11acd1;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
   align-items: center;
   justify-content: flex-start;
 
   .title {
-    color: ${props => props.theme.mainBackground};
+    color: ${props => props.theme.mainBackground};;
   }
 
   .card-content{
-    color: ${props => props.theme.mainDarkMode};
+    color: ${props => props.theme.mainText};
     justify-content: space-between;
     height: 100%;
     margin-bottom: 5%;
