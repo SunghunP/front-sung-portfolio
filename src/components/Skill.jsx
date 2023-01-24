@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
-  background: #1c1c1c;
+  background: ${props => props.theme.mainDarkMode};
   border-top: 4px solid ${props => props.theme.mainBackground};
   padding: 1%;
   margin: 3% 2%;
@@ -12,7 +12,7 @@ const StyledCard = styled.div`
   justify-content: flex-start;
 
   .title {
-    color: ${props => props.theme.mainBackground};;
+    color: ${props => props.theme.blueAccent};
   }
 
   .card-content{
