@@ -13,21 +13,55 @@ const StyledCard = styled.div`
 
   .title {
     color: ${props => props.theme.blueAccent};
-  }
+    margin: 10px 2px;
+  };
 
   .card-content{
     color: ${props => props.theme.mainText};
     justify-content: space-between;
     height: 100%;
     margin-bottom: 5%;
-  }
+  };
 
   div {
     text-align: center;
+  };
+  .fa.fa-star {
+    color: #a2acb9;
+  }
+
+  .fa.fa-star.checked {
+    color: ${props => props.theme.blueAccent}
   }
 `;
 
 export default function Skill({theme, e}) {
+
+  function printStars (num) {
+    const stars = [];
+
+    for (let i = 0; i < 5; i++) {
+      if (i < num) {
+        stars[i] = ("fa fa-star checked");
+      } else {
+        stars[i] = ("fa fa-star");
+      }
+    }
+
+    return stars.map((element, idx)=> (
+      <span className={element} key={idx} ></span>
+    ));
+  }
+
+  // function mapSubSkills(descArr) {
+  //   return e.desc.map(item => (
+  //     <div>
+  //       <div>{e.desc[0]}</div>
+  //       <div>{printStars(e.skillLevel[0])}</div>
+  //     </div> 
+  //   ))
+  // }
+
   return (
     <StyledCard className='card flex col' theme={theme}>
       <div className='card-title'>
@@ -35,7 +69,9 @@ export default function Skill({theme, e}) {
       </div>
       <div className='card-content flex col'>
         <div>{e.desc}</div>
-        <div>{e.skillLevel}</div>
+        <div>
+          {printStars(e.skillLevel)}
+        </div>
       </div>
     </StyledCard>
   );

@@ -29,5 +29,4 @@ export default function SkillSection({theme, skillList}) {
       </div>
     </StyledDiv>
   </>
-  
 };

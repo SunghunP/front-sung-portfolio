@@ -10,23 +10,23 @@ module.exports = [
     'skillLevel': 4,
   },
   {
-    'name': 'Front-end frameworks',
+    'name': 'Front-End Frameworks',
     'desc': 'React.js, Angular, Django',
     'skillLevel': 4,
   },
   {
-    'name': 'Back-end frameworks',
-    'desc': 'Node.js, Express',
+    'name': 'Back-End Frameworks',
+    'desc': 'Node.js & Express',
     'skillLevel': 4,
   },
   {
-    'name': 'Version Control Software',
-    'desc': 'Git and Git Hub',
+    'name': 'Version Control',
+    'desc': 'Git & Git Hub',
     'skillLevel': 4
   },
   {
-    'name': 'Cloud data platforms',
-    'desc': 'MongoDB Atlas, AWS',
+    'name': 'Cloud Data Platforms',
+    'desc': 'MongoDB, Atlas, AWS',
     'skillLevel': 3,
   },
 ];
