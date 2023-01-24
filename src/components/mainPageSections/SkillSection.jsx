@@ -9,9 +9,10 @@ const StyledDiv = styled.div`
   justify-content: center;
 
   .wrapper {
-    max-width: 80vw;
-    border: 5px solid brown;
     flex-wrap: wrap;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -24,7 +25,7 @@ export default function SkillSection({theme, skillList}) {
     <StyledDiv theme={theme} className='flex col'>
       <Styledh1 theme={theme} >SKILLS</Styledh1>
       <div className='wrapper flex'>
-        {mapDataToComponents(skillList, Skill)}
+        {mapDataToComponents(skillList, Skill, theme)}
       </div>
     </StyledDiv>
   </>
