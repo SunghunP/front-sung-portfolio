@@ -18,6 +18,7 @@ const theme = {
   mainText: '#ffffff',
   mainBackground: '#1949c5',
   mainDarkMode: '#1c1c1c',
+  blueAccent: '#13d2f8',
   reverseText: '#000000',
   reverseBackground: '#ffffff'
 };

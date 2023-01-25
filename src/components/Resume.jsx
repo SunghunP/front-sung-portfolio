@@ -3,8 +3,6 @@ import resume from '../assets/resume/Sunghun_Park_Resume.pdf';
 
 const ResumeDiv = styled.div`
   width: 100%;
-  align-items: center;
-  justify-content: center;
   padding: 10px 0px;
 
   a {
