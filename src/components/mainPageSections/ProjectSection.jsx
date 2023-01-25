@@ -9,7 +9,9 @@ const StyledDiv = styled.div`
   .wrapper {
     width: 100%;
     margin-bottom: 10%;
-  }
+    justify-content: center;
+    align-items: center;
+  };
 `;
 
 export default function ProjectSection({theme, projectList}) {
