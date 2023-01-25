@@ -26,7 +26,7 @@ module.exports = [
   },
   {
     'name': 'Cloud Data Platforms',
-    'desc': 'MongoDB, Atlas, AWS',
+    'desc': 'MongoDB Atlas, AWS',
     'skillLevel': 3,
   },
 ];
