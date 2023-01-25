@@ -26,13 +26,14 @@ const StyledCard = styled.div`
   div {
     text-align: center;
   };
+  
   .fa.fa-star {
     color: #a2acb9;
-  }
+  };
 
   .fa.fa-star.checked {
     color: ${props => props.theme.blueAccent}
-  }
+  };
 `;
 
 export default function Skill({theme, e}) {
