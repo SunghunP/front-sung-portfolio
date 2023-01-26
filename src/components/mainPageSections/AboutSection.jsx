@@ -40,11 +40,6 @@ const StyledAboutSection = styled.div`
 		text-decoration: none;
 	};
 
-  h1 {
-    font-size: 20px;
-    margin: 5%;
-  };
-
   div {
     font-size: 15px;
   };
@@ -70,7 +65,7 @@ export default function AboutSection({theme}) {
       <div className='gradient flex'>
         <div className='wrapper flex'>
           <div className="half-column flex col">
-            <h1>Hi, I'm Sung!</h1>
+            <h2>Hi, I'm Sung!</h2>
             <div>
               <p>
                 I am a Full Stack Web Developer based in Seattle Washington

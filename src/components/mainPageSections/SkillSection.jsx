@@ -13,20 +13,18 @@ const StyledDiv = styled.div`
     margin-bottom: 5%;
     align-items: center;
     justify-content: center;
-  }
-`;
+  };
 
-const Styledh1 = styled.h1`
-  color: ${props => props.theme.mainBackground};
+  h2 {
+    color: ${props => props.theme.mainBackground};
+  };
 `;
 
 export default function SkillSection({theme, skillList}) {
-  return <>
-    <StyledDiv theme={theme} className='flex col'>
-      <Styledh1 theme={theme} >SKILLS</Styledh1>
-      <div className='wrapper flex'>
-        {mapDataToComponents(skillList, Skill, theme)}
-      </div>
-    </StyledDiv>
-  </>
+  return <StyledDiv theme={theme} className='flex col'>
+    <h2>SKILLS</h2>
+    <div className='wrapper flex'>
+      {mapDataToComponents(skillList, Skill, theme)}
+    </div>
+  </StyledDiv>
 };

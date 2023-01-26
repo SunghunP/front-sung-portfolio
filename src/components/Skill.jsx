@@ -12,7 +12,7 @@ const StyledCard = styled.div`
   justify-content: flex-start;
 
   .title {
-    color: ${props => props.theme.blueAccent};
+    color: ${props => props.theme.mainAccent};
     margin: 10px 2px;
   };
 
@@ -32,7 +32,7 @@ const StyledCard = styled.div`
   };
 
   .fa.fa-star.checked {
-    color: ${props => props.theme.blueAccent}
+    color: ${props => props.theme.mainAccent}
   };
 `;
 
