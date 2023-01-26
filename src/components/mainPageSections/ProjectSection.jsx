@@ -12,11 +12,15 @@ const StyledDiv = styled.div`
     justify-content: center;
     align-items: center;
   };
+
+  h2 {
+    color: ${props => props.theme.mainAccent};
+  }
 `;
 
 export default function ProjectSection({theme, projectList}) {
   return <StyledDiv theme={theme} className='flex col'>
-    <h1>PROJECTS</h1>
+    <h2>PROJECTS</h2>
     <div className='wrapper flex col'>
       {mapDataToComponents(projectList, Project, theme)}
     </div>
