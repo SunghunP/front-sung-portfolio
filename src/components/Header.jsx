@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { device } from '../helpers/devices';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -43,6 +44,19 @@ const StyledHeader = styled.header`
 			transition: transform 0.23s ease-in;
 			transform-origin: bottom left;
 		};
+	};
+
+	@media ${device.tablet} {
+		a.links {
+			font-size: 23px;
+		};
+		a.hover-animation {
+			font-size: 20px;
+		};
+	};
+
+	@media ${device.laptop} {
+
 	};
 `;
 

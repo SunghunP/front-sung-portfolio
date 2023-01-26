@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import resume from '../assets/resume/Sunghun_Park_Resume.pdf';
+import { device } from '../helpers/devices';
 
 const ResumeDiv = styled.div`
   width: 100%;
@@ -25,6 +26,7 @@ const ResumeDiv = styled.div`
     color: ${props => props.theme.mainText};
     box-shadow: 0px 0px 20px #3F19C5;
     background-size: 200% auto;
+    cursor: pointer;
   };
 
   .wrapper{
@@ -32,6 +34,12 @@ const ResumeDiv = styled.div`
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+  };
+
+  @media ${device.tablet} {
+    button {
+      font-size: 28px;
+    }
   };
 `;
 

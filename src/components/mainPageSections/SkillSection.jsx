@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Skill from '../../components/Skill';
 import mapDataToComponents from '../../helpers/mapDataToComponents';
+import { device } from '../../helpers/devices';
 
 const StyledDiv = styled.div`
   background: ${props => props.theme.reverseBackground};
@@ -17,6 +18,12 @@ const StyledDiv = styled.div`
 
   h2 {
     color: ${props => props.theme.mainBackground};
+  };
+
+  @media ${device.tablet} {
+    h2 {
+      font-size: 40px;
+    }
   };
 `;
 

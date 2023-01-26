@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../helpers/devices';
 
 const StyledCard = styled.div`
   background: ${props => props.theme.mainDarkMode};
@@ -34,6 +35,15 @@ const StyledCard = styled.div`
   .fa.fa-star.checked {
     color: ${props => props.theme.mainAccent}
   };
+
+  @media ${device.tablet} {
+    h3 {
+      font-size: 25px;
+    };
+    .card-content {
+      font-size: 20px;
+    };
+  };
 `;
 
 export default function Skill({theme, e}) {
@@ -53,15 +63,6 @@ export default function Skill({theme, e}) {
       <span className={element} key={idx} ></span>
     ));
   }
-
-  // function mapSubSkills(descArr) {
-  //   return e.desc.map(item => (
-  //     <div>
-  //       <div>{e.desc[0]}</div>
-  //       <div>{printStars(e.skillLevel[0])}</div>
-  //     </div> 
-  //   ))
-  // }
 
   return (
     <StyledCard className='card flex col' theme={theme}>
