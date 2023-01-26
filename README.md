@@ -1,5 +1,8 @@
 # Sunghun's Portfolio
-![](https://img.shields.io/badge/Version-WIP-blue)
+![](https://img.shields.io/badge/Version-1.0.0-blue)
+
+## [VIEW THE WEBSITE](sunghunp.netlify.app)
+
 ### About this project
 This project showcases my technical skills and provides a place where anyone can see my qualifications and experience
 
@@ -9,8 +12,6 @@ This project showcases my technical skills and provides a place where anyone can
 #### Tech Stack
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) ![styled-components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-
 ## Table of Contents
 1. [General](#general)
 3. [Technologies](#technologies)
@@ -19,9 +20,8 @@ This project showcases my technical skills and provides a place where anyone can
 
 ## General
 ### Links
-**[LIVE SITE]()** <br>
+**[LIVE SITE](sunghunp.netlify.app)** <br>
 _[FRONT END REPOSITORY](https://github.com/SunghunP/front-sung-portfolio)_ <br>
-_[BACK END REPOSITORY](https://github.com/SunghunP/backend-sung-portfolio)_ 
 
 ### Wire Frame
 [WireFrame Can be Found here](https://www.figma.com/file/MmMHD0vVV1Y4I4tCBL95uc/Untitled?node-id=0%3A1&t=as9BsFVniq1BSbyu-1)
@@ -30,18 +30,12 @@ _[BACK END REPOSITORY](https://github.com/SunghunP/backend-sung-portfolio)_
 WIP
 
 ## Technologies
-### Front End Technologies
 - HTML
 - CSS
 - JavaScript
 - [React.js](https://reactjs.org/)
 - [SASS](https://sass-lang.com/)
 - [styled-components](https://styled-components.com/)
-
-### Backend Technologies
-- [Express](https://expressjs.com/)
-- [node.js](https://nodejs.org/en/)
-- [MongoDB](https://www.mongodb.com/)
 
 ## Getting started
 ### Installation
