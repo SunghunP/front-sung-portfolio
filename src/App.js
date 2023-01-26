@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 
 // pages
 import Home from "./pages/Home";
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
-import About from './pages/About';
+// import Projects from './pages/Projects';
+// import Skills from './pages/Skills';
+// import About from './pages/About';
 
 // components
 import Header from "./components/Header";
@@ -29,9 +29,6 @@ function App() {
       <Header theme={theme}/>
       <Routes>
         <Route path='/' element={<Home theme={theme} skillList={skillList} projectList={projectList} />} />
-        <Route path='/projects' element={<Projects projectList={projectList} />}/>
-        <Route path='/skills' element={<Skills skillList={skillList} />}/>
-        <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer theme={theme}/>
     </div>
