@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../helpers/devices';
 
 const StyledCard = styled.div`
 	width: 85%;
@@ -38,7 +39,8 @@ const StyledCard = styled.div`
 	.card-content {
 		height: 100%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
+		font-size: 20px;
 	}
 
 	.icons a span i {
@@ -50,6 +52,24 @@ const StyledCard = styled.div`
 	.span-item {
 		font-size: 0.75em;
 	}
+
+  @media ${device.tablet} {
+    h3.title {
+      font-size: 35px;
+    };
+    .card-content {
+      font-size: 20px;
+    };
+	};
+
+	@media ${device.tabletLg} {
+		h3.title {
+      font-size: 40px;
+    };
+    .card-content {
+      font-size: 30px;
+    };
+	};
 `;
 
 export default function Project({theme, e}) {

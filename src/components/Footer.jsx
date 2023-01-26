@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { device } from '../helpers/devices';
 const StyledFooter = styled.footer`
 	height: 150px;
 	align-items: center;
 	justify-content: center;
 	margin: auto 5%;
+	margin-top: 20px;
 	padding-top: 30px;
 	text-align: center;
 
@@ -28,6 +30,12 @@ const StyledFooter = styled.footer`
 		cursor: pointer;
 	}
 
+	i, div {
+		font-size: 24px;
+	}
+
+	@media ${device.tablet} {
+	};
 `; 
 
 export default function Footer ({theme}) {

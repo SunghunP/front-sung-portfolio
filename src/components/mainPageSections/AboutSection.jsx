@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import profile from '../../assets/images/profile.jpg';
+import { device } from '../../helpers/devices';
 
 const StyledAboutSection = styled.div`
   width: 100%;
@@ -56,6 +57,21 @@ const StyledAboutSection = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  };
+
+  @media ${device.tablet} {
+    h2 {
+      font-size: 35px;
+    };
+    p {
+      font-size: 25px;
+    };
+    div.profile-img {
+      min-height: 500px;
+    };
+    div.half-column.flex.col {
+      justify-content: space-around;
+    };
   };
 `;
 
