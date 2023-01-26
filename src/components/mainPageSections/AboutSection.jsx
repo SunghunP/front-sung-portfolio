@@ -61,7 +61,7 @@ const StyledAboutSection = styled.div`
 
 export default function AboutSection({theme}) {
   return  (
-    <StyledAboutSection className='about-section flex' theme={theme} profile={profile}>
+    <StyledAboutSection className='about-section flex' theme={theme} profile={profile} id='about-section'>
       <div className='gradient flex'>
         <div className='wrapper flex'>
           <div className="half-column flex col">

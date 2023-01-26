@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
 `;
 
 export default function ProjectSection({theme, projectList}) {
-  return <StyledDiv theme={theme} className='flex col'>
+  return <StyledDiv theme={theme} className='flex col' id='projects-section'>
     <h2>PROJECTS</h2>
     <div className='wrapper flex col'>
       {mapDataToComponents(projectList, Project, theme)}
