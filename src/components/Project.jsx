@@ -9,6 +9,7 @@ const StyledCard = styled.div`
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
+	box-shadow: 0px 0px 5px 1px ${props => props.theme.mainAccent};
 
 	.card-text {
 		background-color: rgba(28, 28, 28, 0.85);
@@ -54,8 +55,8 @@ const StyledCard = styled.div`
 export default function Project({theme, e}) {
 
 	function mapToSpan (arr) {
-		return arr.map(item => (
-			<span className='span-item'>{item} </span>
+		return arr.map((item, idx) => (
+			<span className='span-item' key={idx} >{item} </span>
 		))
 	}
 
@@ -76,7 +77,7 @@ export default function Project({theme, e}) {
 						<span><i className="fa-brands fa-github"></i></span>
 					</a>
 					<a href={e.website}>
-						<span><i class="fa-solid fa-up-right-from-square"></i></span>
+						<span><i className="fa-solid fa-up-right-from-square"></i></span>
 					</a>
 				</div>
 
