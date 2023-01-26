@@ -50,15 +50,15 @@ export default function Header ({theme}) {
 	return <StyledHeader theme={theme} className='flex'>
 		<Link className='links' to='/'>Sung Hun Park</Link>
 		<nav className='flex'>
-			<Link className='links hover-animation' to='/about'>
+			<a className='links hover-animation' href="#about-section">
 				About Me
-			</Link>
-			<Link className='links hover-animation' to='/skills'>
+			</a>
+			<a className='links hover-animation' href="#skills-section">
 				Skills
-			</Link>
-			<Link className='links hover-animation' to='/projects'>
+			</a>
+			<a className='links hover-animation' href="#projects-section">
 				Projects
-			</Link>
+			</a>
 		</nav>
 	</StyledHeader>
 };

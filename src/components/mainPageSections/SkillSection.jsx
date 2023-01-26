@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
 `;
 
 export default function SkillSection({theme, skillList}) {
-  return <StyledDiv theme={theme} className='flex col'>
+  return <StyledDiv theme={theme} className='flex col' id='skills-section'>
     <h2>SKILLS</h2>
     <div className='wrapper flex'>
       {mapDataToComponents(skillList, Skill, theme)}
