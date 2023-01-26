@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
 	align-items: center;
 	position: sticky;
 	box-shadow: 0px 0px 5px 5px rgba(28, 28, 28, 0.4);
+	z-index: 999;
 
 	.links {
 		color: ${props => props.theme.mainText};
