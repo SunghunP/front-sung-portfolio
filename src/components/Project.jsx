@@ -5,48 +5,44 @@ const StyledCard = styled.div`
 	width: 85%;
 	margin: 3% 2%;
 	min-height: 300px;
-	display: -webkit-grid;
-	
-	display: grid;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
 	box-shadow: 0px 0px 5px 1px ${props => props.theme.mainAccent};
 	overflow: hidden;
+	position: relative;
 	
 	.card-text {
 		background-color: rgba(28, 28, 28, 0.85);
 		z-index: 888;
-		height: 100%;
-	}
+	};
 
-	.card-text, img {
-		grid-column: 1;
-		grid-row: 1;
+	.inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	};
 
 	.title {
 		font-size: 25px;
-		margin: 0px auto;
-		margin-top: 10px;
-	}
+		margin: 0px;
+	};
 
 	img {
-		width: 100%;
-		height: 100%;
-	}
+		width: inherit;
+	};
 
-	div.card-title, div.card-content {
-		margin: auto 4%;
+	.card-title, .card-content {
+		margin: 3% 5%;
 	};
 
 	.card-content {
-		height: 100%;
 		font-size: 20px;
-	};
-
-	.card-content-item {
-		margin: auto 0px;
+		height: inherit;
+		justify-content: space-between;
 	};
 
 	.icons a span {
@@ -57,7 +53,6 @@ const StyledCard = styled.div`
 
 	.div-items {
 		font-size: 0.75em;
-		display: flex;
 		flex-wrap: wrap;
 
 		.div-item {
@@ -93,16 +88,16 @@ export default function Project({theme, e}) {
 		))
 	}
 
-	return <StyledCard theme={theme} className='card' e={e} >
-		<img src={e.img} alt={e.desc}/>
-		<div className='card-text flex col'>
+	return <StyledCard theme={theme} className='card flex col' e={e} >
+		<img src={e.img} alt={e.desc} className='inner' />
+		<div className='card-text flex col inner'>
 			<div className='card-title'>
 				<h3 className='title'>{e.name}</h3>
 			</div>
 			
 			<div className='card-content flex col'>
 				<div className='card-content-item'>{e.desc}</div>
-				<div className='card-content-item div-items'>
+				<div className='card-content-item div-items flex'>
 					{mapToSpan(e.technologies)}
 				</div>
 				<div className='card-content-item icons'>
