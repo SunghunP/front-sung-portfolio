@@ -41,6 +41,11 @@ const ResumeDiv = styled.div`
       font-size: 28px;
     }
   };
+  @media ${device.tabletlg} {
+    button {
+      font-size: 40px;
+    }
+  };
 `;
 
 export default function Resume({theme}) {
@@ -50,7 +55,7 @@ export default function Resume({theme}) {
         <a href={resume} target="_blank" rel='noreferrer' className='flex'>
           <button className='flex'>
             <span>
-              <i className="fab-regular fab-file"></i>
+              <i className="fa-regular fa-file"></i>
             </span>
             View my resume!
           </button>
