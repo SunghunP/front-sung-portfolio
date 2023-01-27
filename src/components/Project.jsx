@@ -40,14 +40,16 @@ const StyledCard = styled.div`
 
 	.card-content {
 		height: 100%;
-		display: flex;
-		justify-content: space-between;
 		font-size: 20px;
-	}
+	};
 
-	.icons a i {
-		margin: 5%;
-		margin-left: 0%;
+	.card-content-item {
+		margin: auto 0px;
+	};
+
+	.icons a span {
+		margin: 3%;
+		margin-left: 0px;
 		color: ${props => props.theme.mainAccent};
 	};
 
@@ -94,12 +96,12 @@ export default function Project({theme, e}) {
 				<div className='card-content-item'>
 					{mapToSpan(e.technologies)}
 				</div>
-				<div className='icons'>
+				<div className='card-content-item icons'>
 					<a href={e.repo} className='icon'>
-						<i className="fa-brands fa-square-github"></i>
+						<span className="fa-brands fa-square-github"></span>
 					</a>
 					<a href={e.website} className='icon'>
-						<i className="fa-solid fa-arrow-up-right-from-square"></i>
+						<span className="fa-solid fa-arrow-up-right-from-square"></span>
 					</a>
 				</div>
 			</div>	
