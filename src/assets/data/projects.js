@@ -1,7 +1,7 @@
 module.exports = [
   {
     'name': 'DogeAdopter',
-    'desc': 'A dog adoption website that allows users to create, read, update and delete dogs for adoption.',
+    'desc': 'A dog adoption website that allows users to create, read, update and delete dogs for adoption. This was my first attempt at using angular and I wanted to challenge myself to learn a new framework from scratch.',
     'website': 'https://doge-adopter.netlify.app/',
     'repo': 'https://github.com/SunghunP/frontend-adopt-a-doge',
     'img': 'https://i.imgur.com/Erw9gs2.png',
@@ -9,7 +9,7 @@ module.exports = [
   },
   {
     'name': 'Pho Tai',
-    'desc': 'A website for my parents restaurant',
+    'desc': 'A restaurant website that allows users to view the general information of the restaurant. The menu is stored in a cloud database that can be easily edited and updated',
     'website': 'https://photai.netlify.app/',
     'repo': 'https://github.com/SunghunP/photai-frontend',
     'img': 'https://i.imgur.com/h9GDjaQ.png',
