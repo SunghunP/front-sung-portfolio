@@ -4,6 +4,7 @@ import { device } from '../helpers/devices';
 const StyledCard = styled.div`
 	width: 85%;
 	margin: 3% 2%;
+	height: 100%;
 	min-height: 300px;
 	display: grid;
 	border-radius: 10px;
@@ -25,7 +26,8 @@ const StyledCard = styled.div`
 
 	.title {
 		font-size: 25px;
-		margin: 20px auto;
+		margin: 0px auto;
+		margin-top: 10px;
 	}
 
 	img {
@@ -57,14 +59,14 @@ const StyledCard = styled.div`
 		font-size: 0.75em;
 	}
 
-  /* @media ${device.tablet} {
+  @media ${device.tablet} {
     h3.title {
       font-size: 35px;
     };
     .card-content {
       font-size: 20px;
     };
-	}; */
+	};
 
 	@media ${device.tabletLg} {
 		h3.title {
