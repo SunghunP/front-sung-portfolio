@@ -1,7 +1,7 @@
 # Sunghun's Portfolio
 ![](https://img.shields.io/badge/Version-1.0.0-blue)
 
-## [VIEW THE WEBSITE](sunghunp.netlify.app)
+## [VIEW THE WEBSITE](https://sunghunp.netlify.app/)
 
 ### About this project
 This project showcases my technical skills and provides a place where anyone can see my qualifications and experience
