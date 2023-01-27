@@ -57,14 +57,14 @@ const StyledCard = styled.div`
 		font-size: 0.75em;
 	}
 
-  @media ${device.tablet} {
+  /* @media ${device.tablet} {
     h3.title {
       font-size: 35px;
     };
     .card-content {
       font-size: 20px;
     };
-	};
+	}; */
 
 	@media ${device.tabletLg} {
 		h3.title {
