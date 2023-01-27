@@ -30,6 +30,8 @@ const StyledAboutSection = styled.div`
 
 	.half-column {
 		width: 50vw;
+    -webkit-align-items: center;
+	  -webkit-justify-content: center;
 		align-items: center;
 		justify-content: center;
     max-height: 100%;
@@ -70,6 +72,7 @@ const StyledAboutSection = styled.div`
       min-height: 500px;
     };
     div.half-column.flex.col {
+      -webkit-justify-content: space-around;
       justify-content: space-around;
     };
   };

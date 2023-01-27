@@ -7,12 +7,19 @@ body
   height: auto
   width: 100%
   font-family: 'Work Sans', sans-serif
+  -webkit-text-size-adjust: none
 
 .flex
+  display: -moz-flex
+  display: -webkit-flex
+  -moz-box-pack: -webkit-justify
   display: flex
 
 .col
+  -webkit-flex-direction: column
   flex-direction: column
+
+
 
 header 
   top: 0

@@ -6,12 +6,16 @@ import { device } from '../../helpers/devices';
 const StyledDiv = styled.div`
   background: ${props => props.theme.reverseBackground};
   color: ${props => props.theme.reverseText};
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   justify-content: center;
 
   .wrapper {
     flex-wrap: wrap;
     margin-bottom: 5%;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
     justify-content: center;
   };

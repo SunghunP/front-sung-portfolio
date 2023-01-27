@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { device } from '../helpers/devices';
 const StyledFooter = styled.footer`
 	height: 150px;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
 	align-items: center;
 	justify-content: center;
 	margin: auto 5%;

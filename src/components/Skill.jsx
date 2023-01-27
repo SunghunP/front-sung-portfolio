@@ -9,6 +9,8 @@ const StyledCard = styled.div`
   width: 40%;
   height: 150px;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: center;
   align-items: center;
   justify-content: flex-start;
 
@@ -19,6 +21,7 @@ const StyledCard = styled.div`
 
   .card-content{
     color: ${props => props.theme.mainText};
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     height: 100%;
     margin-bottom: 5%;
