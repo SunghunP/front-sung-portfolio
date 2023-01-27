@@ -15,6 +15,7 @@ const StyledCard = styled.div`
 		background-color: rgba(28, 28, 28, 0.85);
 		z-index: 888;
 		position: relative;
+		height: 100%;
 	}
 
 	.card-text, img {
@@ -35,7 +36,7 @@ const StyledCard = styled.div`
 	}
 
 	div.card-title, div.card-content {
-		margin: auto 4% ;
+		margin: auto 4%;
 	};
 
 	.card-content {
@@ -53,9 +54,16 @@ const StyledCard = styled.div`
 		color: ${props => props.theme.mainAccent};
 	};
 
-	.span-item {
+	.div-items {
 		font-size: 0.75em;
-	}
+		display: flex;
+		flex-wrap: wrap;
+
+		.div-item {
+			margin: auto 10px;
+			margin-left: 0px;
+		};
+	};
 
   @media ${device.tablet} {
     h3.title {
@@ -80,7 +88,7 @@ export default function Project({theme, e}) {
 
 	function mapToSpan (arr) {
 		return arr.map((item, idx) => (
-			<span className='span-item' key={idx} >{item} </span>
+			<div className='div-item' key={idx} >{item} </div>
 		))
 	}
 
@@ -93,7 +101,7 @@ export default function Project({theme, e}) {
 			
 			<div className='card-content flex col'>
 				<div className='card-content-item'>{e.desc}</div>
-				<div className='card-content-item'>
+				<div className='card-content-item div-items'>
 					{mapToSpan(e.technologies)}
 				</div>
 				<div className='card-content-item icons'>
