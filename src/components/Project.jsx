@@ -43,7 +43,7 @@ const StyledCard = styled.div`
 		font-size: 20px;
 	}
 
-	.icons a span i {
+	.icons a i {
 		margin: 5%;
 		margin-left: 0%;
 		color: ${props => props.theme.mainAccent};
@@ -94,10 +94,10 @@ export default function Project({theme, e}) {
 				</div>
 				<div className='icons card-content-item'>
 					<a href={e.repo} >
-						<span><i className="fa-brands fa-github"></i></span>
+						<i className="fa-brands fa-github"></i>
 					</a>
 					<a href={e.website}>
-						<span><i className="fa-solid fa-up-right-from-square"></i></span>
+						<i className="fa-solid fa-up-right-from-square"></i>
 					</a>
 				</div>
 

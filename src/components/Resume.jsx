@@ -50,7 +50,7 @@ export default function Resume({theme}) {
         <a href={resume} target="_blank" rel='noreferrer' className='flex'>
           <button className='flex'>
             <span>
-              <i className="fa-regular fa-file"></i>
+              <i className="fab-regular fab-file"></i>
             </span>
             View my resume!
           </button>

@@ -50,7 +50,7 @@ export default function Footer ({theme}) {
 
 		<div className='icon-wrapper flex'>
 			<a href='https://github.com/SunghunP' className='icon'>
-				<i className="fa-brands fa-square-github"></i>
+				<i className="fas-brands fas-square-github"></i>
 			</a>
 			<a href='https://www.linkedin.com/in/sunghunp/' className='icon'>
 				<i className="fa-brands fa-linkedin"></i>
