@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { device } from '../helpers/devices';
 
 const StyledCard = styled.div`
-	width: 85%;
+	width: 80%;
 	margin: 3% 2%;
 	min-height: 300px;
+	height: 100%;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
@@ -62,6 +63,7 @@ const StyledCard = styled.div`
 	};
 
   @media ${device.tablet} {
+		min-height: 400px;
     h3.title {
       font-size: 35px;
     };
@@ -71,11 +73,22 @@ const StyledCard = styled.div`
 	};
 
 	@media ${device.tabletLg} {
+		min-height: 500px;
 		h3.title {
       font-size: 40px;
     };
     .card-content {
       font-size: 30px;
+    };
+	};
+
+	@media ${device.laptop} {
+		min-height: 700px;
+		h3.title {
+      font-size: 60px;
+    };
+    .card-content {
+      font-size: 50px;
     };
 	};
 `;
