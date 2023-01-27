@@ -4,12 +4,13 @@ import { device } from '../helpers/devices';
 const StyledCard = styled.div`
 	width: 85%;
 	margin: 3% 2%;
+	min-height: 300px;
 	display: grid;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
 	box-shadow: 0px 0px 5px 1px ${props => props.theme.mainAccent};
-	overflow: hidden;
+	overflow: scroll;
 	
 	.card-text {
 		background-color: rgba(28, 28, 28, 0.85);
