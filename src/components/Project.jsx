@@ -6,7 +6,6 @@ const StyledCard = styled.div`
 	margin: 3% 2%;
 	min-height: 300px;
 	display: grid;
-	overflow: hidden;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
@@ -39,7 +38,7 @@ const StyledCard = styled.div`
 	.card-content {
 		height: 100%;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		font-size: 20px;
 	}
 
