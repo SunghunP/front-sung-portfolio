@@ -10,10 +10,12 @@ const StyledCard = styled.div`
 	color: ${props => props.theme.mainText};
 	border: 1px solid ${props => props.theme.mainAccent};
 	box-shadow: 0px 0px 5px 1px ${props => props.theme.mainAccent};
-
+	overflow: hidden;
+	
 	.card-text {
 		background-color: rgba(28, 28, 28, 0.85);
 		z-index: 888;
+		position: relative;
 	}
 
 	.card-text, img {
@@ -29,6 +31,7 @@ const StyledCard = styled.div`
 	img {
 		width: 100%;
 		height: 100%;
+		position: relative;
 	}
 
 	div.card-title, div.card-content {
