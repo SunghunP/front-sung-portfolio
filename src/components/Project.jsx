@@ -4,8 +4,6 @@ import { device } from '../helpers/devices';
 const StyledCard = styled.div`
 	width: 85%;
 	margin: 3% 2%;
-	height: 100%;
-	min-height: 300px;
 	display: grid;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
