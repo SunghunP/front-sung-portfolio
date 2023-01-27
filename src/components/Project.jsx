@@ -92,15 +92,14 @@ export default function Project({theme, e}) {
 				<div className='card-content-item'>
 					{mapToSpan(e.technologies)}
 				</div>
-				<div className='icons card-content-item'>
-					<a href={e.repo} >
-						<i className="fa-brands fa-github"></i>
+				<div className='icons'>
+					<a href={e.repo} className='icon'>
+						<i className="fa-brands fa-square-github"></i>
 					</a>
-					<a href={e.website}>
-						<i className="fa-solid fa-up-right-from-square"></i>
+					<a href={e.website} className='icon'>
+						<i className="fa-solid fa-arrow-up-right-from-square"></i>
 					</a>
 				</div>
-
 			</div>	
 		</div>
 	</StyledCard>
