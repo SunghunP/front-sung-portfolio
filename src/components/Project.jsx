@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../helpers/devices';
 
 const StyledCard = styled.div`
-	width: 80%;
+	width: 85%;
 	margin: 3% 2%;
 	min-height: 300px;
 	height: 100%;
