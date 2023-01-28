@@ -88,7 +88,7 @@ const StyledCard = styled.div`
       font-size: 60px;
     };
     .card-content {
-      font-size: 50px;
+      font-size: 40px;
     };
 	};
 `;
