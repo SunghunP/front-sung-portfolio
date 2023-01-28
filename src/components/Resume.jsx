@@ -18,7 +18,6 @@ const ResumeDiv = styled.div`
     width: 100%;
     border-radius: 50px;
     border: none;
-    font-size: 18px;
     font-weight: bold;
     background-image: linear-gradient(to right, #3F19C5 0%, #12D8FA  51%, #199FC5  100%);
     align-items: center;
@@ -36,13 +35,23 @@ const ResumeDiv = styled.div`
     padding-bottom: 10px;
   };
 
-  @media ${device.tablet} {
-    button {
-      font-size: 28px;
+  @media ${device.mobileLg} {
+    .button {
+      font-size: 15px;
     }
   };
-  @media ${device.tabletlg} {
-    button {
+  @media ${device.tablet} {
+    .button {
+      font-size: 20px;
+    }
+  };
+  @media ${device.tabletLg} {
+    .button {
+      font-size: 35px;
+    }
+  };
+  @media ${device.laptop} {
+    .button {
       font-size: 40px;
     }
   };
@@ -53,7 +62,7 @@ export default function Resume({theme}) {
     <ResumeDiv theme={theme} >
       <div className='wrapper flex'>
         <a href={resume} target="_blank" rel='noreferrer' className='flex'>
-          <button className='flex'>
+          <button className='flex button'>
             <span>
               <i className="fa-regular fa-file"></i>
             </span>

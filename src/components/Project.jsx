@@ -4,7 +4,7 @@ import { device } from '../helpers/devices';
 const StyledCard = styled.div`
 	width: 85%;
 	margin: 3% 2%;
-	min-height: 300px;
+	min-height: 350px;
 	height: 100%;
 	border-radius: 10px;
 	color: ${props => props.theme.mainText};
@@ -49,6 +49,7 @@ const StyledCard = styled.div`
 	.icons a span {
 		margin: 3%;
 		margin-left: 0px;
+		margin-top: 5px;
 		color: ${props => props.theme.mainAccent};
 	};
 
