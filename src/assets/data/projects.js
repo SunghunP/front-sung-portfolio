@@ -16,6 +16,14 @@ module.exports = [
     'technologies': ['React.js', 'JavaScript', 'Express', 'Node', 'MongoDB Atlas', 'Styled-Components', 'SASS']
   },
   {
+    'name': 'Book Mart',
+    'desc': 'An online book tracking club where users can compile a list of their favorite books and showcase them and their details.',
+    'website': 'https://bookmarts.netlify.app/',
+    'repo': 'https://github.com/SunghunP/Books-Mart-Frontend',
+    'img': 'https://i.imgur.com/q6F8vz9.png',
+    'technologies': ['React.js','JavaScript', 'express', 'Node', 'MongoDB Atlas', 'Styled-Components'],
+  },
+  {
     'name': 'Game Shack',
     'desc': 'Game Shack is an e-commerce selling/buying website for games with full CRUD functionality.',
     'website': 'https://gameshack.onrender.com/',
